@@ -6,56 +6,7 @@ namespace BethanysPieShop
     {
         static void Main(string[] args)
         {
-            int monthlyWage = 1234;
-            int months = 12, bonus = 1000;
-
-            bool isActive = true;
-            double rating = 99.25;
-            
-            double ratePerHour = 12.34;
-            int numberOfHoursWorked = 165;
-
-            
-
-            long veryLongMonth = numberOfHoursWorked;
-            double d = 123456789.0;
-            int x = (int)d;
-
-            int intVeryLongMonth = (int)veryLongMonth;
-
-            double currentMonthWage = ratePerHour * numberOfHoursWorked + bonus;
-
-            Console.WriteLine(currentMonthWage);
-
-            ratePerHour += 3; 
-
-            if (currentMonthWage > 2000)
-            {
-                Console.WriteLine("Top paid Employee");
-            }
-            int numberOfEmployees = 15;
-            numberOfEmployees --;
-
-            int intMaxValue = int.MaxValue;
-            int intMinValue = int.MinValue;
-
-            char userSelection = 'a';
-            char upperVersion = char.ToUpper(userSelection);
-            bool isDigit = char.IsDigit(userSelection);
-            bool isLetter = char.IsLetter(userSelection);
-
-            DateTime hireDate = new DateTime(2021,3, 28, 14, 30, 0);
-
-            DateTime startDate = hireDate.AddDays(15);
-            DateTime currentDate = DateTime.Now;
-
-            bool areWeInDst = currentDate.IsDaylightSavingTime();
-
-            DateTime startHour = DateTime.Now;
-            TimeSpan worktime = new TimeSpan(8, 35, 0);
-            DateTime endHour = startHour.Add(worktime);
-
-            Console.WriteLine(hireDate);
+           
         }
     }
 }
