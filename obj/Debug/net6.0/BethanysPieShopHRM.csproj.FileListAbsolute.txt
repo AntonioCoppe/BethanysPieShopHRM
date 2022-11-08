@@ -1,0 +1,15 @@
+/Users/coppe/BethanysPieShopHRM/bin/Debug/net6.0/BethanysPieShopHRM
+/Users/coppe/BethanysPieShopHRM/bin/Debug/net6.0/BethanysPieShopHRM.deps.json
+/Users/coppe/BethanysPieShopHRM/bin/Debug/net6.0/BethanysPieShopHRM.runtimeconfig.json
+/Users/coppe/BethanysPieShopHRM/bin/Debug/net6.0/BethanysPieShopHRM.dll
+/Users/coppe/BethanysPieShopHRM/bin/Debug/net6.0/BethanysPieShopHRM.pdb
+/Users/coppe/BethanysPieShopHRM/obj/Debug/net6.0/BethanysPieShopHRM.csproj.AssemblyReference.cache
+/Users/coppe/BethanysPieShopHRM/obj/Debug/net6.0/BethanysPieShopHRM.GeneratedMSBuildEditorConfig.editorconfig
+/Users/coppe/BethanysPieShopHRM/obj/Debug/net6.0/BethanysPieShopHRM.AssemblyInfoInputs.cache
+/Users/coppe/BethanysPieShopHRM/obj/Debug/net6.0/BethanysPieShopHRM.AssemblyInfo.cs
+/Users/coppe/BethanysPieShopHRM/obj/Debug/net6.0/BethanysPieShopHRM.csproj.CoreCompileInputs.cache
+/Users/coppe/BethanysPieShopHRM/obj/Debug/net6.0/BethanysPieShopHRM.dll
+/Users/coppe/BethanysPieShopHRM/obj/Debug/net6.0/refint/BethanysPieShopHRM.dll
+/Users/coppe/BethanysPieShopHRM/obj/Debug/net6.0/BethanysPieShopHRM.pdb
+/Users/coppe/BethanysPieShopHRM/obj/Debug/net6.0/BethanysPieShopHRM.genruntimeconfig.cache
+/Users/coppe/BethanysPieShopHRM/obj/Debug/net6.0/ref/BethanysPieShopHRM.dll
