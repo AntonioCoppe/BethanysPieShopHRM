@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace BethanysPieShop
 {
@@ -6,56 +7,85 @@ namespace BethanysPieShop
     {
         static void Main(string[] args)
         {
-            int monthlyWage = 1234;
-            int months = 12, bonus = 1000;
+            string firstName = "Bethany";
+            string lastName = "Smith";
 
-            bool isActive = true;
-            double rating = 99.25;
-            
-            double ratePerHour = 12.34;
-            int numberOfHoursWorked = 165;
+            //string noValueString = null;
+            string s;
 
-            
+            s = firstName;
 
-            long veryLongMonth = numberOfHoursWorked;
-            double d = 123456789.0;
-            int x = (int)d;
+            //var username = "Bethany Smith";
 
-            int intVeryLongMonth = (int)veryLongMonth;
+            string fullName = firstName + " " + lastName;
+            string employeeIdentification = string.Concat(firstName, lastName);
 
-            double currentMonthWage = ratePerHour * numberOfHoursWorked + bonus;
+            string empID = firstName.ToLower() + lastName.ToLower();
 
-            Console.WriteLine(currentMonthWage);
+            int length = empID.Length;
 
-            ratePerHour += 3; 
-
-            if (currentMonthWage > 2000)
+            if (fullName.Contains("Beth") || fullName.Contains("beth") )
             {
-                Console.WriteLine("Top paid Employee");
+                Console.WriteLine("Bethany is in the name");
+            } 
+             string subString = fullName.Substring(1, 3);
+             Console.WriteLine("Characther from index 1 to 3: " + subString);
+
+             string nameUsingInterpolation = $"My name is {firstName} {lastName}";
+
+            string greeting = $"Hello {firstName}";
+            Console.WriteLine(greeting);
+
+            string displayName = $"Welcome \n {firstName} \t {lastName}";
+            Console.WriteLine(displayName);
+
+            string invalidFilePath = "C:\\data\\employeekuist.xlsx";
+            string marketingTagLine = "Bethany's pies are the best pies in the world";
+
+            Console.WriteLine(marketingTagLine.Replace("pies", "cakes"));
+            Console.WriteLine(invalidFilePath);
+
+            Console.WriteLine("Are both names equal? " + firstName.Equals(lastName));
+            Console.WriteLine("Are both names equal? " + (firstName == fullName));
+
+            //String immutability
+            string name = "Bethany";
+            string anotherName = name;
+
+            name += " Smith";
+
+            Console.WriteLine(name);
+            Console.WriteLine(anotherName);
+
+            string lowerCaseName = name.ToLower();
+            string indexes = string.Empty;
+
+            for (int i = 0; i < 2500; i++)
+            {
+                indexes += i.ToString();
             }
-            int numberOfEmployees = 15;
-            numberOfEmployees --;
 
-            int intMaxValue = int.MaxValue;
-            int intMinValue = int.MinValue;
+            StringBuilder builder = new StringBuilder();
+            builder.Append("Last name: ");
+            builder.Append(lastName);
+            builder.Append("First name: ");
+            builder.Append(firstName);
+            string result = builder.ToString();
+            Console.WriteLine(result);
 
-            char userSelection = 'a';
-            char upperVersion = char.ToUpper(userSelection);
-            bool isDigit = char.IsDigit(userSelection);
-            bool isLetter = char.IsLetter(userSelection);
+            //parsing strings
+            string wage = Console.ReadLine();
+            int wageValue;
 
-            DateTime hireDate = new DateTime(2021,3, 28, 14, 30, 0);
-
-            DateTime startDate = hireDate.AddDays(15);
-            DateTime currentDate = DateTime.Now;
-
-            bool areWeInDst = currentDate.IsDaylightSavingTime();
-
-            DateTime startHour = DateTime.Now;
-            TimeSpan worktime = new TimeSpan(8, 35, 0);
-            DateTime endHour = startHour.Add(worktime);
-
-            Console.WriteLine(hireDate);
+            if(int.TryParse(wage, out wageValue))
+            {
+                Console.WriteLine("Wage value: " + wageValue);
+            }
+            else
+            {
+                Console.WriteLine("Invalid wage value");
+            }
+            
         }
     }
 }
