@@ -15,3 +15,7 @@ Table of Contents:
 3. Working with Methods:
 
     - <https://github.com/AntonioCoppe/BethanysPieShopHRM/tree/Working-with-Methods>  
+
+4. Value Types and Reference Types:
+
+    -<https://github.com/AntonioCoppe/BethanysPieShopHRM/tree/Value-Types-and-Reference-Types>
