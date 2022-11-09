@@ -1,6 +1,6 @@
 # Bethany's Pie Shop HR  
 
-This is an HR management Software developed while learning about the C# Methods Creation and manipulation
+This is an HR management Software developed while learning about the C# Value types and Reference Types
 
 Table of Contents:
 
