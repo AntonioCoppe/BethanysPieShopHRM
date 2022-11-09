@@ -13,3 +13,5 @@
 /Users/coppe/BethanysPieShopHRM/obj/Debug/net6.0/BethanysPieShopHRM.pdb
 /Users/coppe/BethanysPieShopHRM/obj/Debug/net6.0/BethanysPieShopHRM.genruntimeconfig.cache
 /Users/coppe/BethanysPieShopHRM/obj/Debug/net6.0/ref/BethanysPieShopHRM.dll
+/Users/coppe/BethanysPieShopHRM/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/coppe/BethanysPieShopHRM/obj/Debug/net6.0/BethanysPieShopHRM.csproj.CopyComplete
