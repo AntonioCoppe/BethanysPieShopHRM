@@ -19,3 +19,7 @@ Table of Contents:
 4. Value Types and Reference Types:
 
     -<https://github.com/AntonioCoppe/BethanysPieShopHRM/tree/Value-Types-and-Reference-Types>
+
+5. First Class and Objects:
+
+    -<https://github.com/AntonioCoppe/BethanysPieShopHRM/tree/First-Class-and-Objects>
