@@ -4,8 +4,8 @@ namespace BethanysPieShopHRM.HR
 {
     public class Employee
     {
-        private string firstName;
-        private string lastName;
+        private string? firstName;
+        private string? lastName;
 
         private int numberOfHoursWorked;
         private double wage;
@@ -15,7 +15,12 @@ namespace BethanysPieShopHRM.HR
 
         public string FirstName
         {
-            get { return firstName; }
+            get { 
+                if (firstName == null)
+                {
+                    throw new ArgumentNullException(nameof(firstName));
+                }
+                return firstName; }
             set
             {
                 firstName = value;
@@ -24,7 +29,12 @@ namespace BethanysPieShopHRM.HR
 
         public string LastName
         {
-            get { return lastName; }
+            get {
+                if (lastName == null)
+                {
+                    throw new ArgumentNullException(nameof(lastName));
+                }
+                 return lastName; }
             set
             {
                 lastName = value;

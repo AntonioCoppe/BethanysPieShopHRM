@@ -8,11 +8,16 @@ namespace BethanysPieShopHRM.Accounting
 {
     public class Account
     {
-        private string accountNumber;
+        private string? accountNumber;
 
         public string AccountNumber
         {
-            get { return accountNumber; }
+            get { 
+                if (accountNumber == null)
+                {
+                    throw new ArgumentNullException(nameof(accountNumber));
+                }
+                return accountNumber; }
             set { accountNumber = value; }
         }
     }
