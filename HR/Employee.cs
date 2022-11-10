@@ -1,6 +1,6 @@
 using System;
 
-namespace BethanysPieShopHRMEmployeeApp
+namespace BethanysPieShopHRM.HR
 {
     public class Employee
     {
@@ -10,6 +10,8 @@ namespace BethanysPieShopHRMEmployeeApp
         private int numberOfHoursWorked;
         private double wage;
         private double hourlyRate;
+
+        public static double taxRate = 0.2;
 
         public string FirstName
         {
@@ -71,7 +73,9 @@ namespace BethanysPieShopHRMEmployeeApp
 
         public double ReceiveWage(out int hoursWorked)
         {
-            Wage = NumberOfHoursWorked * HourlyRate;
+            double wageBeforeTax = HourlyRate * NumberOfHoursWorked;
+            double tax = wageBeforeTax * taxRate;
+            Wage = wageBeforeTax - tax;
             
             Console.WriteLine($"The wage for {NumberOfHoursWorked} hours of work is {Wage}.");
 

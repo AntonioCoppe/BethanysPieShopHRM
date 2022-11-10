@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using BethanysPieShopHRM.HR;
+using BethanysPieShopHRM.Accounting;
 
-namespace BethanysPieShopHRMEmployeeApp
+namespace BethanysPieShopHRM.HR
 {
     class Program
     {
         private static List<Employee> employees = new List<Employee>();
+
+        Customer customer = new Customer();
 
         static void Main(string[] args)
         {
