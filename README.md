@@ -1,6 +1,6 @@
 # Bethany's Pie Shop HR  
 
-This is an HR management Software developed while learning about the C# Type System
+This is an HR management Software developed while learning about the C# Methods Creation and manipulation
 
 Table of Contents:
 
@@ -15,3 +15,11 @@ Table of Contents:
 3. Working with Methods:
 
     - <https://github.com/AntonioCoppe/BethanysPieShopHRM/tree/Working-with-Methods>  
+
+4. Value Types and Reference Types:
+
+    -<https://github.com/AntonioCoppe/BethanysPieShopHRM/tree/Value-Types-and-Reference-Types>
+
+5. First Class and Objects:
+
+    -<https://github.com/AntonioCoppe/BethanysPieShopHRM/tree/First-Class-and-Objects>
