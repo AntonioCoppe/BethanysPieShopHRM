@@ -23,3 +23,15 @@ Table of Contents:
 5. First Class and Objects:
 
     -<https://github.com/AntonioCoppe/BethanysPieShopHRM/tree/First-Class-and-Objects>
+
+6. Doing more with custom Types:
+
+    - <https://github.com/AntonioCoppe/BethanysPieShopHRM/tree/Doing-More-With-custom-Types>  
+
+7. Applying inheritance to C# interfaces:
+
+    -<https://github.com/AntonioCoppe/BethanysPieShopHRM/tree/Applying-Inheritance>
+
+8. Using Interfaces:
+
+    -<https://github.com/AntonioCoppe/BethanysPieShopHRM/tree/Using-Inheritance>
