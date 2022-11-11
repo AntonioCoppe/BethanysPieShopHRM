@@ -1,55 +1,46 @@
-using System;
+﻿using System;
 
 namespace BethanysPieShopHRM.HR
 {
-    public class Employee
+    //public class Employee
+    public abstract class Employee
     {
-        private string? firstName;
-        private string? lastName;
+        private string firstName;
+        private string lastName;
+        private string email;
 
         private int numberOfHoursWorked;
         private double wage;
-        private double hourlyRate;
+        private double? hourlyRate;
+        public static double taxRate = 0.15;
 
-        public static double taxRate = 0.2;
+        private DateTime birthDay;
+        //private EmployeeType employeeType;
 
         public string FirstName
         {
-            get { 
-                if (firstName == null)
-                {
-                    throw new ArgumentNullException(nameof(firstName));
-                }
-                return firstName; }
+            get { return firstName; }
             set
             {
                 firstName = value;
             }
         }
-
         public string LastName
         {
-            get {
-                if (lastName == null)
-                {
-                    throw new ArgumentNullException(nameof(lastName));
-                }
-                 return lastName; }
+            get { return lastName; }
             set
             {
                 lastName = value;
             }
         }
-
-        public double HourlyRate
+        public string Email
         {
-            get { return hourlyRate; }
+            get { return email; }
             set
             {
-                hourlyRate = value;
+                email = value;
             }
         }
-
         public int NumberOfHoursWorked
         {
             get { return numberOfHoursWorked; }
@@ -58,7 +49,6 @@ namespace BethanysPieShopHRM.HR
                 numberOfHoursWorked = value;
             }
         }
-
         public double Wage
         {
             get { return wage; }
@@ -67,32 +57,73 @@ namespace BethanysPieShopHRM.HR
                 wage = value;
             }
         }
+        public double? HourlyRate
+        {
+            get { return hourlyRate; }
+            set
+            {
+                hourlyRate = value;
+            }
+        }
+        public DateTime BirthDay
+        {
+            get { return birthDay; }
+            set
+            {
+                birthDay = value;
+            }
+        }
 
-        public Employee(string first, string last, double rate)
+        public Employee(string first, string last, string em, DateTime bd, double? rate)
         {
             FirstName = first;
             LastName = last;
-            HourlyRate = rate;
+            Email = em;
+            BirthDay = bd;
+            HourlyRate = rate ?? 10;
         }
 
-        public int PerformWork(int hours)
+        public void PerformWork()
         {
-            NumberOfHoursWorked += hours;
-            return NumberOfHoursWorked;
+            NumberOfHoursWorked++;
+
+            Console.WriteLine($"{FirstName} {LastName} is now working!");
         }
 
-        public double ReceiveWage(out int hoursWorked)
+
+        public void StopWorking()
         {
-            double wageBeforeTax = HourlyRate * NumberOfHoursWorked;
-            double tax = wageBeforeTax * taxRate;
-            Wage = wageBeforeTax - tax;
-            
-            Console.WriteLine($"The wage for {NumberOfHoursWorked} hours of work is {Wage}.");
+            Console.WriteLine($"{FirstName} {LastName} has stopped working!");
+        }
 
-            NumberOfHoursWorked = 0;
-            hoursWorked = NumberOfHoursWorked;
+        public abstract double ReceiveWage();
 
-            return Wage;
+        //public double ReceiveWage()
+        //{
+        //    double wageBeforeTax = NumberOfHoursWorked * HourlyRate.Value;
+        //    double taxAmount = wageBeforeTax * taxRate;
+
+        //    Wage = wageBeforeTax - taxAmount;
+
+        //    Console.WriteLine($"The wage for {NumberOfHoursWorked} hours of work is {Wage}.");
+        //    NumberOfHoursWorked = 0;
+
+        //    return Wage;
+        //}
+
+        public virtual void GiveBonus()
+        {
+            Console.WriteLine($"{FirstName} {LastName} received a generic bonus of 100!");
+        }
+
+        public void DisplayEmployeeDetails()
+        {
+            Console.WriteLine($"\nFirst name: {FirstName}\nLast name: {LastName}\nEmail: {Email}\nBirthday: {BirthDay.ToShortDateString()}\nTax rate: {taxRate}");
+        }
+
+        public static void DisplayTaxRate()
+        {
+            Console.WriteLine($"The current tax rate is {taxRate}");
         }
     }
 }
